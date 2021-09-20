@@ -107,64 +107,89 @@ function mostrarProductosAlmacen(almacen: almacen){
 }
 
 //  [ Valores por Defecto] -----------------------------------------------------------------------------------------------------------------
-const alm_01 = new almacen(); alm_01.alm_nombre = 'Primer Almacen';
+const alm_01 = new almacen(); alm_01.alm_nombre = 'Club nocturno';
   const prod_01 = new producto();
-    prod_01.pro_nombre = "Cebolla"
-    prod_01.pro_cantidad = 10;
+    prod_01.pro_nombre = "Material Medico"
+    prod_01.pro_cantidad = 30;
   const prod_02 = new producto();
-    prod_02.pro_nombre = "Papa"
+    prod_02.pro_nombre = "Arte y Antiguedades"
     prod_02.pro_cantidad = 25;
   const prod_03 = new producto();
-    prod_03.pro_nombre = "Camote"
-    prod_03.pro_cantidad = 5;
+    prod_03.pro_nombre = "Joyas y piedras preciosas"
+    prod_03.pro_cantidad = 12;
+    const prod_04 = new producto();
+  prod_04.pro_nombre = "Tabaco y alcohol"
+  prod_04.pro_cantidad = 35;
     
   alm_01.alm_productos.push(prod_01)
   alm_01.alm_productos.push(prod_02)
   alm_01.alm_productos.push(prod_03)
+  alm_01.alm_productos.push(prod_04)
 
-const alm_02 = new almacen(); alm_02.alm_nombre = 'Segundo Almacen';
-const prod_04 = new producto();
-  prod_04.pro_nombre = "Cebolla"
-  prod_04.pro_cantidad = 0;
+
+const alm_02 = new almacen(); alm_02.alm_nombre = 'Bunker';
 const prod_05 = new producto();
-  prod_05.pro_nombre = "Papa"
-  prod_05.pro_cantidad = 13;
+  prod_05.pro_nombre = "Material Medico"
+  prod_05.pro_cantidad = 12;
 const prod_06 = new producto();
-  prod_06.pro_nombre = "Camote"
-  prod_06.pro_cantidad = 64;
+  prod_06.pro_nombre = "Arte y Antiguedades"
+  prod_06.pro_cantidad = 35;
+const prod_07 = new producto();
+  prod_07.pro_nombre = "Joyas y piedras preciosas"
+  prod_07.pro_cantidad = 21;
+  const prod_08 = new producto();
+  prod_08.pro_nombre = "Tabaco y alcohol"
+  prod_08.pro_cantidad = 40;
   
-alm_02.alm_productos.push(prod_04)
+
 alm_02.alm_productos.push(prod_05)
 alm_02.alm_productos.push(prod_06)
+alm_02.alm_productos.push(prod_07)
+alm_02.alm_productos.push(prod_08)
 
-const alm_03 = new almacen(); alm_03.alm_nombre = 'Tercer Almacen';
-const prod_07 = new producto();
-  prod_07.pro_nombre = "Cebolla"
-  prod_07.pro_cantidad = 1;
-const prod_08 = new producto();
-  prod_08.pro_nombre = "Papa"
-  prod_08.pro_cantidad = 3;
+const alm_03 = new almacen(); alm_03.alm_nombre = 'Hangar';
 const prod_09 = new producto();
-  prod_09.pro_nombre = "Camote"
-  prod_09.pro_cantidad = 90;
+  prod_09.pro_nombre = "Material Medico"
+  prod_09.pro_cantidad = 62;
+const prod_10 = new producto();
+  prod_10.pro_nombre = "Arte y Antiguedades"
+  prod_10.pro_cantidad = 12;
+const prod_11 = new producto();
+  prod_11.pro_nombre = "Joyas y piedras preciosas"
+  prod_11.pro_cantidad = 2;
+  const prod_12 = new producto();
+  prod_12.pro_nombre = "Tabaco y alcohol"
+  prod_12.pro_cantidad = 50;
   
-alm_03.alm_productos.push(prod_07)
-alm_03.alm_productos.push(prod_08)
 alm_03.alm_productos.push(prod_09)
+alm_03.alm_productos.push(prod_10)
+alm_03.alm_productos.push(prod_11)
+alm_03.alm_productos.push(prod_12)
 
-//  [ OPERACIONES ] -----------------------------------------------------------------------------------------------------------------
-//if (prod_01.mod_cantidad('remove',10) == true){
-//  console.log("La operacion se realizo con exito.")
-//}
-//existeProducto('Papa', alm_01);
+const alm_04 = new almacen(); alm_04.alm_nombre = 'SeguroServ';
+const prod_13 = new producto();
+  prod_13.pro_nombre = "Material Medico"
+  prod_13.pro_cantidad = 45;
+const prod_14 = new producto();
+  prod_14.pro_nombre = "Arte y Antiguedades"
+  prod_14.pro_cantidad = 22;
+const prod_15 = new producto();
+  prod_15.pro_nombre = "Joyas y piedras preciosas"
+  prod_15.pro_cantidad = 55;
+  const prod_16 = new producto();
+  prod_16.pro_nombre = "Tabaco y alcohol"
+  prod_16.pro_cantidad = 95;
+  
+alm_04.alm_productos.push(prod_13)
+alm_04.alm_productos.push(prod_14)
+alm_04.alm_productos.push(prod_15)
+alm_04.alm_productos.push(prod_16)
 
 
 mostrarProductosAlmacen(alm_03);
 mostrarProductosAlmacen(alm_01);
 
-moverProducto(alm_03,'Cebolla',10,alm_01);
+moverProducto(alm_03,'Tabaco y alcohol',10,alm_01);
 
 mostrarProductosAlmacen(alm_03);
 mostrarProductosAlmacen(alm_01);
-
-//console.log(alm_01.alm_productos[0].pro_cantidad);
